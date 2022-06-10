@@ -1,5 +1,5 @@
 //TAREA SIMULADOR
-let inicio= parseInt (prompt('Ingesa tu signo zodiacal.'));
+/* let inicio= (prompt('Ingesa tu signo zodiacal.'));
 switch(inicio){
     case "aries":
         alert("Bienvenido Aries");
@@ -51,22 +51,27 @@ switch(inicio){
 
         default:
             alert('Nombre no existente, Ingresa tu signo zodiacal');
-}
 
-let edadPersona1= parseInt(prompt('Ingresa tu edaad por favor'));
+        let aries
+} */
+
+for (let i=1; i<=4; i++){
+    let edadPersona= parseInt(prompt('Ingresa tu edad por favor'));
+    if (edadPersona <= 20) {
+        alert("Tu usuario es genercion"+ " "+ "Z");
+    }
+    else if (edadPersona >=20 && edadPersona <=42) {
+        alert("Tu usuario es genercion"+ " "+ "Y");
+    }
+    else if (edadPersona >42  && edadPersona <=62) {
+        alert("Tu usuario es genercion"+ " "+ "X");
+    }
+} 
+/*let edadPersona1= parseInt(prompt('Ingresa tu edaad por favor'));
 let edadPersona2= parseInt(prompt('Ingresa tu edaad por favor'));
 let edadPersona3= parseInt(prompt('Ingresa tu edaad por favor'));
-let edadPersona4= parseInt(prompt('Ingresa tu edaad por favor'));
-let promedio 
+let edadPersona4= parseInt(prompt('Ingresa tu edaad por favor')); 
+let promedio
 
-promedio= (edadPersona1+edadPersona2+edadPersona3+edadPersona4/4);
+promedio= (edadPersona1+edadPersona2+edadPersona3+edadPersona4/4); */
 
-if (promedio <= 20) {
-    alert("Tu usuario es genercion"+ " "+ "Z");
-}
-else if (promedio >20  <=42) {
-    alert("Tu usuario es genercion"+ " "+ "Y");
-}
-else if (promedio >42  <=62) {
-    alert("Tu usuario es genercion"+ " "+ "X");
-}
